@@ -1,0 +1,228 @@
+.animationchk
+{
+    width: 89%;
+    height: 120px;
+    /* background-image: url("D:\Vikrant_work\NDTV\NDTVapp\static\NDTVapp\images.jpg");
+    background-size: cover; */
+    background: url('track.jpg') 50%;
+    /* background-color: blanchedalmond; */
+    padding-left: 10px;
+    align-items: center;
+    margin-top: 40px;
+    margin-left:40px;
+   
+  
+}
+ 
+
+.car
+{
+    width: 300px;
+    position: absolute;
+    left:5%;
+    transform: translateY(10%);
+    animation: run 5s infinite;
+}
+
+
+@keyframes run
+{
+    0% {
+        transform: translate(0,10%);
+
+    }
+    80%{
+        content: "Reference ";
+    }
+    100%{
+        transform: translate(150vh,10%);
+    }
+}
+
+.wlcom
+{
+    animation-duration: 3s;
+  animation-name: slidein;
+  font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+        text-shadow: 4px 4px 2px #94cfb2;
+}
+
+@keyframes slidein {
+    from {
+      margin-left:60%;
+      width: 150%;
+    }
+    75% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+      }
+  
+   
+  }
+
+.newsflash{
+    background-color: blanchedalmond;
+    color: black;
+    
+    flex: left;
+}
+
+.scrolltext
+{
+    margin-top: 10px;
+    background-color: aqua;
+    height: 30px;
+    margin-left: 10px;
+    width:80%;
+    display: inline;
+}
+
+span.newsflashnamedata
+{
+    color: red;
+}
+
+.newsflashicon
+{
+    background-color: wheat;
+}
+
+/* 
+.storiesarea{
+    /* background: aqua; */
+/* height: 300px;
+display: flex;
+padding: 15px;
+margin-top: 29px;
+margin-left: 5px;
+align-items: center;
+box-shadow:  8px 8px 0 rgba(0,0,0,0.2);
+
+} */ 
+
+.Storyimage
+{
+    height: 150px;
+    width: 400px; 
+    object-fit: cover;
+
+}
+
+.noidea
+{
+    
+    display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 16px;
+  justify-content: first baseline;
+
+  column-gap: 5px;
+}
+
+.card {
+    box-shadow: 4px 8px  rgba(0,0,0,0.2);
+    display: inline;
+    margin: 2px 4px;
+    max-width: 400px;
+    border-radius: 5px;
+    text-align:center;
+    background-color: antiquewhite;
+
+}
+
+.topstories
+{
+    background-color:white;
+    margin: 10px;
+    width: 30%;
+    margin-left:8px;
+    float: left;
+}
+
+.storieslist
+{
+    margin-top: 2px;
+    /* border-bottom: 1px solid black; */
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    margin-left: 8px;
+    
+    
+    
+
+    
+}
+
+.storieslist span
+{
+    margin-left: 4px;
+}
+
+.videocad {
+    background-color:white;
+    /* left: 42px; */
+    width: 340px;
+    margin-left: 33%;
+    margin-top: 23px;
+    box-shadow: 4px 8px  rgba(0,0,0,0.2);
+}
+
+.videocaption
+{
+   font-size: large;
+}
+
+
+video
+{
+    float: left;
+    margin-left: 10px;
+    margin-top: 14px;
+   
+}
+
+
+
+
+
+
+
+/* .storiescard
+{
+    background-color: burlywood;
+    margin: 2px 8px;
+    height: 300px;
+    width: 300px;
+    
+    border-radius: 5px;
+} */
+
+
+
+/* .stories1
+{
+    background-color: burlywood;
+    display: inline;
+    height: 300px;
+    width: 300px;
+}
+
+.stories2
+{
+    background-color: rgb(192, 116, 16);
+    display: inline;
+    height: 300px;
+    width: 300px;
+}
+.stories3
+{
+    background-color: rgb(41, 24, 1);
+    display: inline;
+    height: 300px;
+    width: 300px;
+} */
+

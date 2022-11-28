@@ -1,0 +1,58 @@
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'NDTVapp/src/index.css' %}">
+        <!-- <link rel="stylesheet" href="{% static 'myapp/styles.css' %}"> -->
+        {% block head%}
+        {% endblock %}
+        </head>
+    <body>
+        <div >
+            <ul class="main">
+                <li><a href="/html/">ब्रेकिंग न्यूज़</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Cricket</a></li>
+                <li><a href="#">Tech</a></li>
+                <li><a href="#">FOOD</a></li>
+                <li><a href="#">EDUCATION</a></li>
+                <li><a href="#">LIFESTYLE</a></li>
+                <li><a href="#">AUTO</a></li>
+                <li><a href="#">Tech</a></li>
+                <li><a href="#">CROSSWORD</a> </li>
+                <li><a href="#">SHOPPING</a></li>
+                <li><a href="#">SWASTH</a> </li>
+            </ul>
+
+        </div>
+        <div >
+            <ul class="Dashboard">
+                <li><a href="/html/" class="logo">NDTV</a></li>
+                <li><a href="#">LIVE TV</a></li>
+                <li><a href="#">LATEST</a></li>
+                <li><a href="#">ELECTIONS</a></li>
+                <li><a href="#">INDIA</a></li>
+                <li><a href="#">OPINION</a></li>
+                <li><a href="#">VIDEO</a></li>
+                <li><a href="#">CITIES</a></li>
+                <li><a href="#">WORLD</a></li>
+                <li><a href="#">OFFBEAT</a></li>
+                <li><a href="#">TRENDS</a> </li>
+                <li><a href="#">PHOTOS</a></li>
+                <li><a href="#">SWASTH</a> </li>
+                <li><img src="{% static 'NDTVapp/images/bellicon.png' %}" alt="" class="bellicon"></li>
+                <li><img src="{% static 'NDTVapp/images/fbicon.png' %}" alt="" class="fbicon"></li>
+            </ul>
+
+        </div>
+       
+
+          
+      
+
+      
+        {% block body%}
+        {% endblock %}
+
+    </body>
+</html>

@@ -1,0 +1,63 @@
+#watch
+{
+    width: 250px;
+}
+
+#btnBlack
+{
+   background-color:#23211f;
+   width:30px;
+   height: 40px;
+   border-radius: 7px;
+}
+
+#btnRed
+{
+   background-color:#ca3d22;
+   width:30px;
+   height: 40px;
+   border-radius: 7px;
+}
+
+#btnBlue
+{
+   background-color:#565681;
+   width:30px;
+   height: 40px;
+   border-radius: 7px;
+}
+
+#btnPink
+{
+   background-color:#e9c7be;
+   width:30px;
+   height: 40px;
+   border-radius: 7px;
+}
+
+#btnPurple
+{
+   background-color:#8a5362;
+   width:30px;
+   height: 40px;
+   border-radius: 7px;
+}
+
+h1 {
+
+    font-size: inherit;
+
+    margin-left: 94px;
+    color: wheat;
+    margin-top: -145px;
+    /* margin-bottom: 133px; */
+}
+
+img#hearrate {
+    width: 46px;
+    background: black;
+    margin-left: 98px;
+    margin-top: -11px;
+    margin-bottom: 61px;
+}
+

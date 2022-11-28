@@ -1,0 +1,96 @@
+{% extends 'NDTVapp/index.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'NDTVapp/src/home.css' %}">
+{% endblock %}
+
+{% block body %}
+ <div class="animationchk">
+    <div class="bkgimg">
+       <span class="wlcom"> welcome to NDTV</span>
+        <img src="{% static 'NDTVapp/images/car.png' %}" alt="" class="car">
+    </div> 
+ </div>
+ <div class="scrolltext">
+    
+    <marquee width="60%" direction="left" class="marque" loop="infinite">
+        {% for newsflash in newsflash %}
+        {{newsflash.Name}}: {{newsflash.Desc}} 
+        {%endfor%}
+    </marquee>
+    
+        <span class="newsflashicon">NEWSFLASH</span>
+
+    
+
+ </div>
+<p >
+
+</p>
+<!-- <div class="storiesarea">
+    
+    
+        {% for stories in story %} 
+        
+        <img src="\media\{{ stories.image }}"  class="Storyimage"alt="">
+        <div class="storyname">{{stories.Name}}</div>
+        <p class="storydetail ">{{stories.Desc}}<p>
+
+            
+        
+        
+       
+     
+     {%endfor%} 
+    
+</div> -->
+<div class="noidea">
+{% for stories in story %} 
+<div class="card">   
+    
+    <img src="\media\{{ stories.image }}"  class="Storyimage" alt="">
+    <div class="container">
+      <h4><b>{{stories.Name}}</b></h4>
+      <p>{{stories.Desc}}</p>
+    </div>
+   
+</div>
+{%endfor%} 
+</div>
+
+<div class="div3">
+
+<div class="topstories">
+    <span><b>TOP STORIES</b></span>
+    {% for topstories in topstories %} 
+    <div class="storieslist">
+    <img src="\media\{{ topstories.image }}"  alt="">
+    <span>{{topstories.Desc}}</span>
+    </div>
+    {%endfor%} 
+    
+    
+
+</div>
+
+
+<div class="Vdstory">
+    {% for VideoStories in VideoStories %} 
+    <div class="videocad">   
+    
+        <video width="320" height="240" controls>
+            <source src="{{VideoStories.video.url}}" type="video/mp4" >
+            
+          </video>
+        <div class="container2">
+            <span class="videocaption"><b>{{VideoStories.caption}}</b></span>
+        </div>
+        
+       
+    </div>
+    {%endfor%}  
+</div>
+
+</div>   
+{% endblock %}

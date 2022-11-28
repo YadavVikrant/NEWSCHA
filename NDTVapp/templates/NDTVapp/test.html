@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+       
+
+    </head>
+    <body>
+        <div class="koni">
+            <img src="{% static 'NDTVapp/images/bellicon.png' %}" alt="" id="bellicon">
+            <h1 id="countdown" >2</h1>
+
+        </div>
+        <div class="koni">
+            <img src="{% static 'NDTVapp/images/bellicon.png' %}" alt="" id="bellicon">
+            <h1 id="countdown2" >1</h1>
+
+        </div>
+
+        <div>
+            <button id="buttonclick"> click me </button>
+        </div>
+
+        <form method="POST"  id ="formxy"enctype="multipart/form-data">
+            {% csrf_token %} 
+            <input id="radio1 "type="radio" name="Topstory" value="Topstory" />Topstory
+            <br>
+            <input type="radio" name="story" value="story" />Story
+            <br>
+            <input type="text"  placeholder="Name" name="Name" id="Name">
+            <input type="text" placeholder="Newsid" name="Newsid" id="Newsid">
+            <input type="text" placeholder="Desc"name="Desc" id="Desc">
+            <input type="file"  id="img"accept="image/*" name="upload" id="upload" > 
+            <input type="submit" name="Add Stories" id="Add Story">          
+        </form>
+        
+        <input type="text"  placeholder="addlist" name="addlist" id="addlist">
+        <ul id="todolist"> 
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+          </ul>
+          <button id="buttonadd"> add list</button>
+        </div>
+        <script type="text/javascript" src="{% static 'NDTVapp/src/js/test.js' %}"></script>
+    </body>
+</html>

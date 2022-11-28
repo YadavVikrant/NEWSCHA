@@ -1,0 +1,60 @@
+body {
+    background-color: lightblue;
+    font-family: verdana;
+  }
+
+.main{
+   
+    text-align: center;  
+    list-style-type: none;
+    margin: 0;
+    padding: 0;   
+    height: 30px; 
+    background-color: #0a0505;
+    color: white;
+    
+    
+}
+li{
+    display: inline;
+}
+
+
+a{
+    text-decoration: none;
+    margin-top: 10px;
+    padding: 1px;
+    color: beige;
+    
+}
+
+.dashboard{
+    list-style-type:none;
+    background-color: black;
+    margin: 0;
+    text-align: left;
+    padding: 1px;
+
+}
+
+.dashboard li{
+     padding-left: 4px;
+}
+
+.logo{
+    font-size:30px;
+    margin-right:20px;
+}
+
+.bellicon{
+    height: 30px;    
+    background-color: aliceblue;
+    
+}
+
+.fbicon{
+    height: 30px;    
+    
+    
+}
+

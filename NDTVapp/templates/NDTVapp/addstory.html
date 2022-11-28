@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %} 
+            <input type="radio" name="Topstory" value="Topstory" />Topstory
+            <br>
+            <input type="radio" name="story" value="story" />Story
+            <br>
+            <input type="text" placeholder="Name" name="Name" id="Name">
+            <input type="text" placeholder="Newsid" name="Newsid" id="Newsid">
+            <input type="text" placeholder="Desc"name="Desc" id="Desc">
+            <input type="file" accept="image/*" name="upload" id="upload" > 
+            <input type="submit" name="Add Stories" id="Add Story">          
+        </form>
+    </body>
+</html>

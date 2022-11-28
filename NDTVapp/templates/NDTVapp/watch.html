@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'NDTVapp/src/watch.css' %}">
+       
+
+    </head>
+    <body onload="startGame()">
+        <div class="koni">
+            <img src="https://i.imgur.com/PTgQlim.png" alt="" id="watch">
+            <h1  id="timehead"><span id="hr">hr</span><span id="min">:Time</span><span id="sec">sec</span></h1>
+            <img src="{%static 'NDTVapp/images/heartrate.jpg'%}" alt="" id="hearrate">
+
+            <h1 id="heartrading">78</h1>
+
+            <audio id="xyz" src="{%static 'NDTVapp/audio/beep-05.mp3'%}"></audio>
+
+
+            <div class="button">
+
+            
+            <button id="btnBlack"></button>
+            <button id="btnRed"></button>
+            <button id="btnBlue"></button>
+            <button id="btnPink"></button>
+            <button id="btnPurple"></button>
+        </div>
+        <div id="propeties"> 
+
+        </div>
+        <button id="time">Time</button>
+        <button id="btnheartrate">Heartrate</button>
+        </div>
+      
+        <script type="text/javascript" src="{% static 'NDTVapp/src/js/abc.js' %}"></script>
+    </body>
+</html>
