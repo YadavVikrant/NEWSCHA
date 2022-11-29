@@ -86,7 +86,7 @@ queuelib==1.5.0
 
 
 
-sip==4.19.13
+
 
 sqlparse==0.4.3
 
