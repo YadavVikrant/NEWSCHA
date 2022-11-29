@@ -1,5 +1,5 @@
 
-anaconda-navigator==2.1.4
+
 
 appdirs==1.4.4
 
